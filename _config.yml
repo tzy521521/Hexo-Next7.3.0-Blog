@@ -81,3 +81,12 @@ deploy:
   type: git
   repo: git@github.com:tzy521521/tzy521521.github.io.git
   branch: master
+
+# 添加字数和阅读时间统计----hexo-symbols-count-time
+## https://github.com/theme-next/hexo-symbols-count-time
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
