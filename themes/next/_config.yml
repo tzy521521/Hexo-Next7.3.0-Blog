@@ -641,16 +641,16 @@ changyan:
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
   enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
-  appid: ofhoQ4D064FrUEMPtOCYYIv5-gzGzoHsz
-  appkey: EmTJwfnkV6TwVi0g7deTFuxW
+  appid: ofhoQ4D064FrUEMPtOCYYIv5-gzGzoHsz # Your leancloud application appid
+  appkey: EmTJwfnkV6TwVi0g7deTFuxW # Your leancloud application appkey
   notify: false # Mail notifier. See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: 来了老弟！说点什么呀～～ # Comment box placeholder
-  avatar: mm # Gravatar style
+  avatar: identicon # Gravatar style
   guest_info: nick,mail,link # Custom comment header
   pageSize: 10 # Pagination size
   language: # Language, available values: en, zh-cn
-  visitor: identicon # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+  visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
 
 # LiveRe comments system
