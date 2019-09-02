@@ -646,7 +646,7 @@ valine:
   notify: false # Mail notifier. See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: 来了老弟！说点什么呀～～ # Comment box placeholder
-  avatar: identicon # Gravatar style
+  avatar: '' # Gravatar style
   guest_info: nick,mail,link # Custom comment header
   pageSize: 10 # Pagination size
   language: # Language, available values: en, zh-cn
