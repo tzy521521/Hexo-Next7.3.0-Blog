@@ -8,7 +8,7 @@ Hexo博客如何添加在线联系功能呢?[DaoVoice](http://www.daovoice.io/)�
 
 最终的效果可以参考我博客的右下角,有个聊天的按钮,效果如下所示:
 
-{% asset_img chat-style.jpeg 如何获取app_id %}
+{% asset_img chat-style.jpeg %}
 
 <!-- more -->
 也可以参考[EZLippi的博客](https://www.ezlippi.com/blog/2018/01/next-chat.html)
@@ -46,4 +46,8 @@ daovoice:
 ```
 需要注意的是,next主题下聊天的按钮会和其他按钮重叠到一起，可以到聊天设置，修改下按钮的位置:
 
-{% asset_img chat.png 如何获取app_id %}
+{% asset_img chat.png %}
+
+最后到右上角选择管理员，微信绑定,可以绑定你的微信号，关注公众号后打开小程序，就可以实时收发消息，有新的消息也会通过微信通知，设置页面如下:
+
+{% asset_img wechat.png %}
