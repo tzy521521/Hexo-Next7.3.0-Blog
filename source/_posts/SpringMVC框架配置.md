@@ -19,9 +19,9 @@ categories: 开发
 ```
 　　可以参考[idea中web.xml默认版本问题解决](https://blog.csdn.net/senar59/article/details/80538821)来解决这个问题。
 　　一般的web工程中都会用到web.xml，web.xml主要用来配置Filter、Listener、Servlet等。但是要说明的是web.xml并不是必须的，一个web工程可以没有web.xml文件。
+<!-- more -->
 # web工程加载web.xml过程
 　　web工程加载的顺序与元素节点在文件中的配置顺序无关。即不会因为 filter 写在 listener 的前面而会先加载 filter。WEB容器的加载顺序是：ServletContext -> context-param -> listener -> filter -> servlet。并且这些元素可以配置在文件中的任意位置。加载过程顺序如下：
-<!-- more -->
 # web.xml配置
 ## 配置servlet
 　　servlet标签用于指定此Web应用的servlet相关配置，这个配置相当重要。servlet-name标签指定此servlet的名字，servlet-class指定servlet的类，这个类开发者可以自己写，一般会继承HttpServlet类，用来初始化整个Web项目和接受http请求并处理，SpringMVC项目中用DispatcherServlet类(前端控制器)。init-param标签里面可以配置一些参数。load-on-startup标签指定当前Web应用启动时装载Servlet的次序，它的内容必须是整数，当这个数>=0时，容器会按数值从小到大依次加载。如果数值<0或没有指定，容器将在用户首次访问时加载这个servlet类。

@@ -9,6 +9,7 @@ categories: 面试题
 　　当程序无法获知对象类型时，在运行期间动态获取类的所有属性和方法，这种动态获取类信息和动态调用对象方法的功能称为反射机制。
 ## 反射机制的实现
 　　Class类与java.lang.reflect类库一起实现反射机制，java.lang.reflect类库包含Field/Method/Constructors类。这些类型的对象由JVM在运行时出创建，分别用于获取未知类的域/方法/构造器：通过Class类和java.lang.reflect类包，未知对象的类信息在运行时被确定，并且在编译时无需获取。
+<!-- more -->
 ## RTTI与java.lang.Class类
 　　RTTI，runtime type information/运行时类型信息，JVM运行时负责记录一个对象的属性。
 　　运行期间，Java通过Class对象记录每个对象的RTTI；每当编写并且编译一个新类时，就会产生一个对应的Class对象（和新类保存在一个同名的.class文件中）
@@ -18,7 +19,6 @@ categories: 面试题
 ## java.lang.reflect类
 　　reflect包提供以下类供反射使用，解析目标类。
 　　Class类：代表一个目标类；Field类：代表目标类的成员变量；Method类：代表目标类的方法。Constructor类：代表目标类的构造方法。Array类：提供了动态创建数组，以及访问数组的元素的静态方法；
-<!-- more -->
 # 反射步骤
 ## 获得目标类的java.lang.Class对象。
 　　1.已获得目标类对象实例，通过目标类对象实例.getClass()返回该类Class对象

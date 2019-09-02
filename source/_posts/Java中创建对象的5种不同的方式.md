@@ -1,7 +1,6 @@
 ---
 title: Java中创建对象的5种不同的方式
 date: 2018-11-11 18:58:32
-description: 作为Java开发者，我们每天都会创建大量的对象，但是，我们总是使用管理依赖系统(如Spring框架)来创建这些对象。其实还有其他方法可以创建对象，在接下来的文章中我会进行详细介绍。
 tags: java基础
 categories: 面试题
 ---
@@ -39,6 +38,8 @@ LDC Lorg/programming/mitra/exercises/Employee;.class
 INVOKEVIRTUAL java/lang/Class.newInstance ()Ljava/lang/Object;
 CHECKCAST org/programming/mitra/exercises/Employee
 ```
+<!-- more -->
+
 ## (3)使用Constructor类的newInstance（）方法 
 　　与使用class类的newInstance()方法相似，java.lang.reflect.Constructor类中有一个可以用来创建对象的newInstance()函数方法。通过使用这个newInstance()方法我们也可以调用参数化构造函数和私有构造函数。
 ```java
