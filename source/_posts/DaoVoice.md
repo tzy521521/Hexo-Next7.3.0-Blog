@@ -44,6 +44,7 @@ daovoice:
   enable: true
   app_id: #这里输入前面获取的app_id
 ```
+# 修改完善
 需要注意的是,next主题下聊天的按钮会和其他按钮重叠到一起，可以到聊天设置，修改下按钮的位置:
 
 {% asset_img chat.png %}
