@@ -18,6 +18,8 @@ DUP
 INVOKESPECIAL org/programming/mitra/exercises/Employee.<init> ()V
 ```
 
+<!-- more -->
+
 ## (2)使用class类的newInstance方法
 　　我们也可以使用class类的newInstance()方法来创建对象。此newInstance()方法调用无参构造函数以创建对象。
 ```java
@@ -38,7 +40,6 @@ LDC Lorg/programming/mitra/exercises/Employee;.class
 INVOKEVIRTUAL java/lang/Class.newInstance ()Ljava/lang/Object;
 CHECKCAST org/programming/mitra/exercises/Employee
 ```
-<!-- more -->
 
 ## (3)使用Constructor类的newInstance（）方法 
 　　与使用class类的newInstance()方法相似，java.lang.reflect.Constructor类中有一个可以用来创建对象的newInstance()函数方法。通过使用这个newInstance()方法我们也可以调用参数化构造函数和私有构造函数。
