@@ -272,7 +272,7 @@ back2top:
 # A button to open designated chat widget in sidebar.
 # Firstly, you need enable the chat service you want to activate its sidebar button.
 chat:
-  enable: ture
+  enable: false
   service: chatra
   #service: tidio
   icon: comment # Icon name in Font Awesome, set false to disable icon.
@@ -873,7 +873,7 @@ swiftype_key:
 # See: https://chatra.io
 # Dashboard: https://app.chatra.io/settings/general
 chatra:
-  enable: true
+  enable: false
   async: true
   id: R2Jws8fLp6oHqDodw # Visit Dashboard to get your ChatraID
   #embed: # Unfinished experimental feature for developers. See: https://chatra.io/help/api/#injectto
@@ -884,6 +884,12 @@ chatra:
 tidio:
   enable: false
   key: # Public Key, get it from dashboard. See: https://www.tidiochat.com/panel/settings/developer
+
+# Online contact
+daovoice:
+  enable: true
+  app_id: 7b76a7ef
+
 
 
 # ---------------------------------------------------------------
