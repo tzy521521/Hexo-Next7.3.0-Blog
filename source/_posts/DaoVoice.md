@@ -11,7 +11,7 @@ Hexo博客如何添加在线联系功能呢?[DaoVoice](http://www.daovoice.io/)�
 {% asset_img chat-style.jpeg 如何获取app_id %}
 
 <!-- more -->
-
+也可以参考[EZLippi的博客](https://www.ezlippi.com/blog/2018/01/next-chat.html)
 # 注册DaoVoice
 首先到[DaoVoice官网](http://www.daovoice.io/)上注册一个账号,注册完成后会得到一个app_id，获取app_id的步骤如下图所示:
 
