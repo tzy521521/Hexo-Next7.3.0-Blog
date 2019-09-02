@@ -4,7 +4,7 @@ date: 2019-09-02 15:00:59
 tags:
 categories:
 ---
-Hexo博客如何添加在线联系功能呢,发现了一个不错的网站可以提供在线联系的服务，当有用户在网页上给你留言后会通过邮件或者微信通知你，可以及时的解答用户的疑问。
+Hexo博客如何添加在线联系功能呢?[DaoVoice](http://www.daovoice.io/)是一个绝佳的客户沟通工具。
 
 最终的效果可以参考我博客的右下角,有个聊天的按钮,效果如下所示:
 
@@ -12,14 +12,14 @@ Hexo博客如何添加在线联系功能呢,发现了一个不错的网站可以
 
 <!-- more -->
 
-# 配置方法
+# 注册DaoVoice
 首先到[DaoVoice官网](http://www.daovoice.io/)上注册一个账号,注册完成后会得到一个app_id，获取app_id的步骤如下图所示:
 
 {% asset_img daovoice.png 如何获取app_id %}
 
 
-# 更改配置文件
-以next主题为例,在/themes/next/layout/_third-party/chat下添加daovoice.swig文件，代码如下：
+# 更改主题配置文件
+以next主题(版本是7.3.0)为例,在/themes/next/layout/_third-party/chat下添加daovoice.swig文件，代码如下：
 ```twig
 {% if theme.daovoice.enable %}
   <script>
